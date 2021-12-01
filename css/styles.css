@@ -7,12 +7,19 @@ body {
   margin: 0; 
 }
 
-button {
-border-radius: 7px;
+.button {
 background: #9c540c;
-padding: 7px;
-color: white;
 border: none;
+border-radius: 7px;
+color: white;
+cursor: pointer;
+font-size: 16;
+padding: 8px 12px;
+/* 8 px en top y bottom y 12px en right y left */
+text-decoration: none;
+background: linear-gradient(to left, #7c430a, #dd944c)
+/* Arrancar de derecha y se va a ir hacia la izquierda, colores degradado */
+
 }
 
 label {
@@ -39,7 +46,20 @@ content:'';
 display: inline-block;
 visibility: visible;
 border: 2px solid white; 
+}
 
+input[type='checkbox']:checked::after {
+
+  width: 10px;
+  height: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #977639;
+  content: '';
+  display: inline-block;
+  visibility: visible;
+  border: 2px solid white;
 }
 
 /* Una buena practica tener estilos centralizados */
@@ -82,11 +102,12 @@ margin-bottom: 70px;
   background-size: cover;
   color: white;
   padding: 20px;
+  height: 500px;
 }
 
-.portada button {
+/* .portada button {
   margin-bottom: 70px;
-}
+} */
 
 .menu {
   display: inline-block;
@@ -106,6 +127,11 @@ margin-bottom: 70px;
 
 .logotipo {
   display: inline-block;
+  font-family: 'pacifico'; cursive;
+  font-size: 50px;
+  margin-left: 0px;
+  margin-top: -10px;
+
 }
 
 .header {
@@ -120,10 +146,12 @@ padding: 50px 10px;
 
 .cafe {
   padding: 10px;
-  margin: 10px;
-  border: 1px solid #412B19;
+  margin: 10px 10px 30px 10px;
+  /* border: 1px solid #412B19; */
   border-radius: 10px;
   /* overflow: hidden; para que no desborden nuestras imagenes */
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+
 }
 
 .cafe ol {
@@ -154,7 +182,7 @@ height: 190px;
 
 .contenedor-cafe-b {
   position: relative;
-  bottom: 115px;
+  bottom: 95px;
   margin-left: 370px;
 
 }
