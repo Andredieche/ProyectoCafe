@@ -3,8 +3,16 @@ font-family: 'Allerta', sans-serif;
 font-family: 'Montserrat', sans-serif; 
 */
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   font-family: 'Allerta', sans-serif;
   margin: 0; 
+  
+}
+
+main {
+  flex: 1;
 }
 
 .button {
@@ -66,6 +74,14 @@ input[type='checkbox']:checked::after {
 .contenedor {
   width: 800px;
   margin: auto;
+  position: relative;
+}
+
+.background-general {
+  background: #3a2b20;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  height: 85px;
+  color: white;
 }
 
 .titulo {
@@ -251,4 +267,27 @@ align-items: flex-start;
   margin-top: 10px;
   font-size: 12px;
 
+}
+
+/* Tablas */
+
+table {
+  width: 100%;  /* toma el 100% de tu padre contenedor que tiene los 800px */
+}
+
+th {
+  background-color: ;
+}
+
+td {
+  padding: 20px;
+}
+
+table, td, th {
+border: 1px solid #c29b61;
+border-collapse: collapse;
+}
+
+.tabla {
+  margin: 50px 0;
 }
