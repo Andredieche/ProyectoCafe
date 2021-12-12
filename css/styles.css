@@ -220,6 +220,7 @@ height: 190px;
 .contacto a {
   color: white;
   text-decoration: none;
+  /*TOP, RIGHT BOTTOM, LEFT*/
   margin: 10px 10px 10px 0px
 }
 
@@ -231,8 +232,8 @@ height: 190px;
 .formulario {
   display: flex;
   color: white;
-  width: 400px;
-  padding: 50px 10px 10px 50px
+  width: 430px;
+  /* padding: 50px 10px 10px 50px */
 }
 
 /* Vamos a darle estilos a las clases col1 y col2 */
@@ -276,7 +277,9 @@ table {
 }
 
 th {
-  background-color: ;
+  background-color: #3a2b29;
+  color: white;
+  padding: 10px 20px;
 }
 
 td {
@@ -284,8 +287,31 @@ td {
 }
 
 table, td, th {
-border: 1px solid #c29b61;
-border-collapse: collapse;
+  font-size: 20px;
+  border: 0;
+  /* border: 1px solid #C29B61;
+  border-collapse: collapse; */
+}
+
+.precio {
+  font-size: 12px;
+  padding: 15px 7px;
+  width: 35px;
+  color: white;
+  text-align: center;
+  background: #9c540c ;
+  border-radius: 50%;
+}
+
+.titulo-precio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #3a2b29;
+  font-size: 45px;
+  font-family: 'Pacifico', cursive;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .tabla {
